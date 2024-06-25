@@ -34,15 +34,21 @@ let sum=0
 for (let i=0; i<employeesArray.length; i++) {
 sum += employeesArray[i].salary
 }
-let average= sum / employeesArray.length
-console.log( "The average salary is " + average);
+let average= sum / employeesArray.length;
+let numberOfEmployees= employeesArray.length;
+console.log(( "The average employee salary between our " + numberOfEmployees + " employee(s) is $"  + average.toFixed(2)));
 };
 
 // Select a random employee
+// TODO: Select and display a random employee
 function getRandomEmployee () {
-  // const employeesArray
-  // TODO: Select and display a random employee
-};
+}
+//   const randomIndex = Math.floor(Math.random() * employeesArray.length);
+//   const randomEmployee = employeeArray[randomIndex];
+
+//   console.log(("Congratulations to " + randomEmployee.firstName, randomEmployee.lastName + " our random drawing winner!"));
+// }
+// getRandomEmployee(employeesArray);
 
 /*
   ====================
