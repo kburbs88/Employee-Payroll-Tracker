@@ -16,7 +16,7 @@ while (trackEmployeeData) {
   let currentEmployee = {
     firstName: firstName,
     lastName: lastName,
-    salary: salary,
+    salary: parseFloat(salary)
   };
 employees.push(currentEmployee);
 
@@ -29,22 +29,18 @@ return employees;
 
 // Display the average salary
   // TODO: Calculate and display the average salary
-  function displayAverageSalary () {
-    let employeesArray= [];
-
-    let currentEmployee = {
-      salary: salary };
-  employeesArray.push(currentEmployee);
-    
-
-  const average = employeesArray.reduce((a, b) => a + b, 0) / arr.length;
-console.log(average);
-
+  function displayAverageSalary (employeesArray) {
+let sum=0
+for (let i=0; i<employeesArray.length; i++) {
+sum += employeesArray[i].salary
+}
+let average= sum / employeesArray.length
+console.log( "The average salary is " + average);
 };
 
 // Select a random employee
 function getRandomEmployee () {
-  const employeesArray
+  // const employeesArray
   // TODO: Select and display a random employee
 };
 
